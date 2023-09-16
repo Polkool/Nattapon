@@ -1,66 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <title>Nattapon's Contact</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Nattapon Profile</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
-
 <body>
-    <!-- Menu -->
-    <hr>
-    <table style="width:100%; text-align: center">
-        <tr>
-            <td>
-                <h3><a href="index.html">Profile</a></h3>
-            </td>
-           
-            <td>
-                <h3><a href="About.html">About</a></h3>
-            </td>
-            <td>
-                <h3><a href="projects.html">Projects</a></h3>
-            </td>
-            <td>
-                <h3><a href="contact.html">Contact</a></h3>
-            </td>
-        </tr>
-    </table>
-    <hr>
-    <h1 style="text-align: center; font-family: cursive;">Contact</h1>
-    <table style="width:100%; text-align: center">
-        <tr>
-            <td>
-                <!-- Form: https://developer.mozilla.org/en-US/docs/Web/HTML/Element#forms -->
-                <form action="mailto:nattapon.kerd@bu.ac.th" method="POST" enctype="text/plain">
-                    <label for="yourName">Your Name:</label>
-                    <input type="text" id="yourName" name="yourName" value="">
-                    <br>
-                    <label for="yourEmail">Your Email:</label>
-                    <input type="email" id="yourEmail" name="yourEmail" value="">
-                    <br>
-                    <br />
-                    <label for="yourMessage">Your Message:</label>
-                    <br>
-                    <textarea id="yourMessage" name="yourMessage" cols="30" rows="10"></textarea>
-                    <br>
-                    <input type="submit" name="">
-                </form>
+    
+<!-- navbar section starts  -->
 
-                <!--Reference Social Media Icons of Awesome 4-->
-                <link rel="stylesheet"
-                    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-                <p><a href="https://www.facebook.com/waizonne" class="fa fa-facebook-square" target="_blank"
-                        style="font-size: 40px; color: rgb(7, 114, 255);"></a>  
-                    <a href="https://www.instagram.com/waizonne" class="fa fa-instagram" target="_blank"
-                        style="font-size: 40px; color: brown;"></a>  
-                    <a href="https://twitter.com/waizonne" class="fa fa-twitter" target="_blank"
-                        style="font-size: 40px; color: rgb(63, 185, 255);"></a>
-                </p>
-                <p>Website: <a href="https://www.realmadrid.com//">Real Madrid.com</a></p>
-                <p>Email: <a href="mailto:nattapon.kerd@bumail.net">nattpon.kerd@bumail.net</a></p>
-        </tr>
-    </table>
+<nav class="navbar">
+    <a href="index.html"> <i class="fas fa-user"></i> <span>profile</span> </a>
+    <a href="about.html"> <i class="fas fa-address-card"></i> <span>about</span> </a>
+    <a href="projects.html"> <i class="fas fa-briefcase"></i> <span>projects</span> </a>
+    <a href="contact.html" class="active"> <i class="fas fa-address-book"></i> <span>contact</span> </a>
+</nav>
+
+<!-- navbar section ends -->
+
+<!-- contact section starts  -->
+
+<section class="contact">
+
+<h1 class="heading"> contact <span>me</span> </h1>
+
+<div class="row">
+
+    <div class="info-container">
+
+        <h1>get in touch</h1>
+
+        <p>If you want to go to heaven,please contact me.</p>
+
+        <div class="box-container">
+
+            <div class="box">
+                <i class="fas fa-map"></i>
+                <div class="info">
+                    <h3>address :</h3>
+                    <p>Samutprakarn, Thailand 10270</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-envelope"></i>
+                <div class="info">
+                    <h3>email :</h3>
+                    <p>Nattapon1212@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-phone"></i>
+                <div class="info">
+                    <h3>number :</h3>
+                    <p>0864095533</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+        </div>
+
+    </div>
+
+    <form action="">
+
+        <div class="inputBox">
+            <input type="text" placeholder="your name">
+            <input type="number" placeholder="your number">
+        </div>
+
+        <div class="inputBox">
+            <input type="email" placeholder="your email">
+            <input type="text" placeholder="your subject">
+        </div>
+
+        <textarea name="" placeholder="your message" id="" cols="30" rows="10"></textarea>
+
+        <input type="submit" value="send message" class="btn">
+
+    </form>
+
+</div>
+
+</section>
+
+<!-- contact section ends -->
+
 </body>
-
 </html>
